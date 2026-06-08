@@ -23,6 +23,8 @@ busca.addEventListener("input", pesquisar);
 
 function pesquisar() {
 
+    resultado.classList.remove("ativo");
+
     resultado.innerHTML = "";
 
     const textoBusca = busca.value.toLowerCase();
