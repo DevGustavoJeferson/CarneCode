@@ -6,11 +6,20 @@
 }
 
 :root{
+    /*COR PRINCIPAL E DA TABELA BOVINA*/
     --cor1: #EE374E;
     --cor2: #C92E43;
     --cor3: #A12535;
     --cor4: #781C28;
     --cor5: #4F121A;
+    /*TABELA SUINA*/
+    --cor01-suino: #3F1F40;
+    --cor02-suino: #89438C;
+    --cor03-suino: #DF6DE3;
+    /*TABELA AVES*/
+    --cor01-aves: #402D17;
+    --cor02-aves: #8C6433;
+    --cor03-aves: #E3A252;
 }
 
 body {
@@ -56,20 +65,100 @@ header > form > input {
     border-radius: 20px;
 }
 
+main {
+    background-color: rgba(241, 238, 238, 0.562);
+
+    padding: 10px 10px;
+
+}
+
 table {
     border-collapse: collapse;
     border: 1px solid black;
 
     width: 80%;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 table td,
-table th,
-table caption {
+table th {
     border: 1px solid black;
     text-align: center;
+    color: black;
+
+    padding: 5px;
 }
+
+table > caption {
+    border: 1px solid black;
+    border-bottom: 0px;
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+
+
+    padding: 10px;
+}
+
+table > tbody > tr:nth-child(1n){
+    background-color: rgb(255, 255, 255);
+}
+
+/*CORES DA TABELA BOVINA*/
+table.bov > caption {
+    background-color: var(--cor5);
+}
+
+table.bov th {
+    background-color: var(--cor4);
+    color: white;
+}
+
+table.bov > tbody > tr:nth-child(2n){
+    background-color: var(--cor1);
+}
+
+table.bov > tbody > tr:nth-child(2n) > td{
+    color: white;
+}
+
+/*CORES DA TABELA SUINA*/
+table.sui > caption {
+    background-color: var(--cor01-suino);
+}
+
+table.sui th {
+    background-color: var(--cor02-suino);
+    color: white;
+}
+
+table.sui > tbody > tr:nth-child(2n){
+    background-color: var(--cor03-suino);
+}
+
+table.sui > tbody > tr:nth-child(2n) > td{
+    color: white;
+}
+/*CORES DA TABELA DE AVES*/
+table.aves > caption {
+    background-color: var(--cor01-aves);
+}
+
+table.aves th {
+    background-color: var(--cor02-aves);
+    color: white;
+}
+
+table.aves > tbody > tr:nth-child(2n){
+    background-color: var(--cor03-aves);
+}
+
+table.aves > tbody > tr:nth-child(2n) > td{
+    color: white;
+}
+
 
 footer {
     background-image: linear-gradient(to top, var(--cor2), var(--cor5));
