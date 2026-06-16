@@ -57,25 +57,6 @@ Antes da implementação foi realizado:
 
 ---
 
-## 📂 Estrutura do Projeto
-
-CarneCode
-│
-├── index.html
-│
-├── src
-│ ├── style.css
-│ └── script.js
-│
-├── assets
-│   └── favicon.ico
-│
-│
-└── docs
-    └── planejamento do projeto
-
----
-
 ## 🔮 Melhorias Futuras
 
 - [ ] Adicionar novos produtos e categorias;
